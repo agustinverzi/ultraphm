@@ -1,11 +1,11 @@
 'use client';
 
-import { Box } from "@mui/material";
+import { Box } from '@mui/material';
 
-import Cards from "@/components/dashboard/Cards";
-import Header from "@/components/dashboard/Header";
-import SelectedPatientsTable from "@/components/dashboard/SelectedPatientsTable";
-import PatientList from "@/components/dashboard/PatientList";
+import Cards from '@/components/dashboard/Cards';
+import Header from '@/components/dashboard/Header';
+import SelectedPatientsTable from '@/components/dashboard/SelectedPatientsTable';
+import PatientList from '@/components/dashboard/PatientList';
 
 import { Patient } from '@/types/patient';
 

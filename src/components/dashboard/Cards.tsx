@@ -1,7 +1,7 @@
-import { Grid } from "@mui/material";
+import { Grid } from '@mui/material';
 
-import Gauge from "@/components/charts/Gauge";
-import InfoCard from "@/components/dashboard/InfoCard";
+import Gauge from '@/components/charts/Gauge';
+import InfoCard from '@/components/dashboard/InfoCard';
 
 export default function Cards() {
   // Render
