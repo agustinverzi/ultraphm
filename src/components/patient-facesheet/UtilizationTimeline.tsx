@@ -36,25 +36,25 @@ function Dot({ color, children }: { color: string; children: React.ReactNode }) 
 export default function UtilizationTimeline() {
   return (
     <Box sx={{ bgcolor: '#fff', borderRadius: 2, p: 3, boxShadow: '0 1px 4px 0 rgba(16,24,40,0.04)', minHeight: 180 }}>
-      <Typography variant="h6" sx={{ fontWeight: 700, fontSize: 20, color: '#23293b', mb: 2 }}>
+      <Typography variant="h6" sx={{ fontWeight: 700, fontSize: 20, color: '#23293b', mb: 6 }}>
         Utilization Timeline
       </Typography>
       <Box sx={{ display: 'flex', alignItems: 'flex-end', gap: 2, mb: 2, mt: 2 }}>
         {timeline.map((item) => (
           <Box key={item.month} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: 40 }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5, minHeight: 70 }}>
-              <Box sx={{ height: 32 }}>
-                {item.row1 && <Dot color={COLORS[item.row1.type as keyof typeof COLORS]}>{item.row1.count}</Dot>}
-              </Box>
-              <Box sx={{ height: 32 }}>
+              <Box sx={{ height: 32, mt: 2 }}>
                 {item.row2 && <Dot color={COLORS[item.row2.type as keyof typeof COLORS]}>{item.row2.count}</Dot>}
               </Box>
+              <Box sx={{ height: 32, mt: 2 }}>
+                {item.row1 && <Dot color={COLORS[item.row1.type as keyof typeof COLORS]}>{item.row1.count}</Dot>}
+              </Box>
             </Box>
-            <Typography sx={{ color: '#6b7280', fontSize: 14, mt: 1 }}>{item.month}</Typography>
+            <Typography sx={{ color: '#6b7280', fontSize: 14, mt: 2 }}>{item.month}</Typography>
           </Box>
         ))}
       </Box>
-      <Box sx={{ display: 'flex', gap: 3, mt: 2 }}>
+      <Box sx={{ justifyContent: 'center', display: 'flex', gap: 3, mt: 6 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <Dot color={COLORS.office}> </Dot>
           <Typography sx={{ color: '#23293b', fontSize: 15 }}>Office</Typography>
