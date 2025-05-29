@@ -34,7 +34,7 @@ export default function Sidebar() {
       <IconButton component={Link} href="/messages" sx={{ color: 'white' }}>
         <MessageIcon />
       </IconButton>
-      <IconButton component={Link} href="#" sx={{ color: 'white' }}>
+      <IconButton component={Link} href="/tcm-toc-snf-waiver" sx={{ color: 'white' }}>
         <StarBorderIcon />
       </IconButton>
       <IconButton component={Link} href="#" sx={{ color: 'white' }}>
