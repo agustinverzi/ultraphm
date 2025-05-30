@@ -37,11 +37,11 @@ export default function Sidebar() {
       <IconButton component={Link} href="/tcm-toc-snf-waiver" sx={{ color: 'white' }}>
         <StarBorderIcon />
       </IconButton>
-      <IconButton component={Link} href="#" sx={{ color: 'white' }}>
-        <CalendarTodayIcon />
+      <IconButton component={Link} href="/ccm" sx={{ color: 'white' }}>
+        <DescriptionIcon />
       </IconButton>
       <IconButton component={Link} href="#" sx={{ color: 'white' }}>
-        <DescriptionIcon />
+        <CalendarTodayIcon />
       </IconButton>
       <IconButton component={Link} href="#" sx={{ color: 'white' }}>
         <BarChartIcon />
